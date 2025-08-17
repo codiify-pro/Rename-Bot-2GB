@@ -21,6 +21,7 @@ def clean_filename(name):
 @Client.on_message(filters.private & (filters.document | filters.video))
 async def rename_start(client, message):
     if await get_maintenance() and message.from_user.id != Config.ADMIN:
+        await message.delete()
         return await message.reply_text("**🛠️ Bot is Under Maintenance**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support", user_id=int(Config.ADMIN))]]))
     file = getattr(message, message.media.value)
     filename = file.file_name
