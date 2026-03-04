@@ -1,12 +1,11 @@
-pyromod
-TgCrypto
+pyrofork==2.3.68
+tgcrypto
 motor
 dnspython
 hachoir
-Pillow
+pillow
 aiohttp
 pytz
-Flask
+flask
 gunicorn
-aiohttp
-pyrogram
+pyromod
