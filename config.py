@@ -8,14 +8,16 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
     DATABASE_URL = os.environ.get("DATABASE_URL","")
-    BOT_UPTIME = time.time()
     START_PIC = (os.environ.get("START_PIC", "https://envs.sh/N2f.jpg")).split()
     ADMIN = int(os.environ.get("ADMIN", ""))
     IS_FSUB = os.environ.get("IS_FSUB", "False").lower() == "true"  # Set "True" For Enable Force Subscribe
-    AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNEL", "").split())) # Add Multiple channel ids
+    AUTH_CHANNELS = list(map(int, os.environ.get("AUTH_CHANNELS", "").split())) # Add Multiple channel ids
+    AUTH_REQ_CHANNELS = list(map(int, os.environ.get("AUTH_REQ_CHANNELS", "").split())) # Add Multiple channel ids
+    FSUB_EXPIRE = int(os.environ.get("FSUB_EXPIRE", 2))  # minutes, 0 = no expiry
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", ""))     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
+    BOT_UPTIME = time.time()
 
 
 class Txt(object):
