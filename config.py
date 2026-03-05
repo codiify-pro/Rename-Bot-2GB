@@ -27,69 +27,62 @@ class Txt(object):
 
 <blockquote><b>𝘕𝘰𝘵𝘦 :</b> 𝘈𝘥𝘶𝘭𝘵 𝘊𝘰𝘯𝘵𝘦𝘯𝘵 𝘪𝘴 𝘚𝘛𝘙𝘐𝘊𝘛𝘓𝘠 𝘱𝘳𝘰𝘩𝘪𝘣𝘪𝘵𝘦𝘥 𝘉𝘢𝘯 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘱𝘦𝘳𝘮𝘢𝘯𝘦𝘯𝘵.</blockquote>"""
 
-    ABOUT_TXT = ABOUT_TXT = """<b>‣ ᴍʏ ɴᴀᴍᴇ : <a href='https://youtube.com/@techifybots'>ᴢᴏʀᴏ ʀᴇɴᴀᴍᴇ ʙᴏᴛ</a>
-‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
-‣ ᴅᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏᴅʙ</a>
-‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
-‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://www.koyeb.com/'>ᴋᴏʏᴇʙ</a>
-‣ ᴄʀᴇᴀᴛᴇᴅ ʙʏ : <a href='https://telegram.me/callownerbot'>ʀᴀʜᴜʟ</a></b>"""
+    ABOUT_TXT = """‣ 𝖬𝗒 𝖭𝖺𝗆𝖾 : <a href='https://youtube.com/@techifybots'>𝖹𝗈𝗋𝗈 𝖱𝖾𝗇𝖺𝗆𝖾 𝖡𝗈𝗍</a>
+‣ 𝖫𝗂𝖻𝗋𝖺𝗋𝗒 : <a href='https://docs.pyrogram.org/'>𝖯𝗒𝗋𝗈𝗀𝗋𝖺𝗆</a>
+‣ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : <a href='https://www.mongodb.com/'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡</a>
+‣ 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : <a href='https://www.python.org/download/releases/3.0/'>𝖯𝗒𝗍𝗁𝗈𝗇 𝟹</a>
+‣ 𝖡𝗈𝗍 𝖲𝖾𝗋𝗏𝖾𝗋 : <a href='https://www.koyeb.com/'>𝖪𝗈𝗒𝖾𝖻</a>
+‣ 𝖢𝗋𝖾𝖺𝗍𝖾𝖽 𝖡𝗒 : <a href='https://telegram.me/callownerbot'>𝖱𝖺𝗁𝗎𝗅</a>"""
 
+    HELP_TXT = """𝖱𝖾𝗇𝖺𝗆𝖾 𝖡𝗈𝗍 𝖨𝗌 𝖠 𝖧𝖺𝗇𝖽𝗒 𝖳𝗈𝗈𝗅 𝖳𝗁𝖺𝗍 𝖧𝖾𝗅𝗉𝗌 𝖸𝗈𝗎 𝖱𝖾𝗇𝖺𝗆𝖾 𝖠𝗇𝖽 𝖬𝖺𝗇𝖺𝗀𝖾 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 𝖤𝖿𝖿𝗈𝗋𝗍𝗅𝖾𝗌𝗌𝗅𝗒.
 
-    HELP_TXT = """
-<b>ʀᴇɴᴀᴍᴇ ʙᴏᴛ ɪꜱ ᴀ ʜᴀɴᴅʏ ᴛᴏᴏʟ ᴛʜᴀᴛ ʜᴇʟᴘꜱ ʏᴏᴜ ʀᴇɴᴀᴍᴇ ᴀɴᴅ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ꜰɪʟᴇꜱ ᴇꜰꜰᴏʀᴛʟᴇꜱꜱʟʏ.
+➻ 𝖢𝗅𝗂𝖼𝗄 𝖮𝗇 𝖳𝗁𝖾 𝖡𝗎𝗍𝗍𝗈𝗇𝗌 𝖦𝗂𝗏𝖾𝗇 𝖡𝖾𝗅𝗈𝗐 𝖥𝗈𝗋 𝖦𝖾𝗍𝗍𝗂𝗇𝗀 𝖬𝗈𝗋𝖾 𝖨𝗇𝖿𝗈."""
 
-➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ꜰᴏʀ ɢᴇᴛᴛɪɴɢ ᴍᴏʀᴇ ɪɴꜰᴏ.</b>
-"""
+    THUMBNAIL_TXT = """<blockquote>🖼 𝖳𝗈 𝖲𝖾𝗍 𝖢𝗎𝗌𝗍𝗈𝗆 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅</blockquote>
 
-    THUMBNAIL_TXT = """<b>» <u>ᴛᴏ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴛʜᴜᴍʙɴᴀɪʟ</u></b>
-    
-➲ ꜱᴇɴᴅ ᴀɴʏ ᴘʜᴏᴛᴏ ᴛᴏ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ꜱᴇᴛ ɪᴛ ᴀꜱ ᴀ ᴛʜᴜᴍʙɴᴀɪʟ.
-➲ /delthumb: ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴛʜᴜᴍʙɴᴀɪʟ.
-➲ /viewthumb: ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴠɪᴇᴡ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴛʜᴜᴍʙɴᴀɪʟ.
+➲ 𝖲𝖾𝗇𝖽 𝖠𝗇𝗒 𝖯𝗁𝗈𝗍𝗈 𝖳𝗈 𝖠𝗎𝗍𝗈𝗆𝖺𝗍𝗂𝖼𝖺𝗅𝗅𝗒 𝖲𝖾𝗍 𝖨𝗍 𝖠𝗌 𝖠 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅.  
+➲ /delthumb: 𝖴𝗌𝖾 𝖳𝗁𝗂𝗌 𝖢𝗈𝗆𝗆𝖺𝗇𝖽 𝖳𝗈 𝖣𝖾𝗅𝖾𝗍𝖾 𝖸𝗈𝗎𝗋 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅.  
+➲ /viewthumb: 𝖴𝗌𝖾 𝖳𝗁𝗂𝗌 𝖢𝗈𝗆𝗆𝖺𝗇𝖽 𝖳𝗈 𝖵𝗂𝖾𝗐 𝖸𝗈𝗎𝗋 𝖢𝗎𝗋𝗋𝖾𝗇𝗍 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅.
 
-<b>ɴᴏᴛᴇ :</b> ɪꜰ ɴᴏ ᴛʜᴜᴍʙɴᴀɪʟ ꜱᴀᴠᴇᴅ ɪɴ ʙᴏᴛ ᴛʜᴇɴ, ɪᴛ ᴡɪʟʟ ᴜꜱᴇ ᴛʜᴜᴍʙɴᴀɪʟ ᴏꜰ ᴛʜᴇ ᴏʀɪɢɪɴɪᴀʟ ꜰɪʟᴇ ᴛᴏ ꜱᴇᴛ ɪɴ ʀᴇɴᴀᴍᴇᴅ ꜰɪʟᴇ"""
+<b>𝖭𝗈𝗍𝖾 :</b> 𝖨𝖿 𝖭𝗈 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅 𝖲𝖺𝗏𝖾𝖽 𝖨𝗇 𝖡𝗈𝗍 𝖳𝗁𝖾𝗇, 𝖨𝗍 𝖶𝗂𝗅𝗅 𝖴𝗌𝖾 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅 𝖮𝖿 𝖳𝗁𝖾 𝖮𝗋𝗂𝗀𝗂𝗇𝖺𝗅 𝖥𝗂𝗅𝖾 𝖳𝗈 𝖲𝖾𝗍 𝖨𝗇 𝖱𝖾𝗇𝖺𝗆𝖾𝖽 𝖥𝗂𝗅𝖾."""
 
-    CAPTION_TXT = """<b>» <u>ᴛᴏ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ ᴀɴᴅ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ</u></b>
-    
-<b>ᴠᴀʀɪᴀʙʟᴇꜱ :</b>         
-ꜱɪᴢᴇ: {filesize}
-ᴅᴜʀᴀᴛɪᴏɴ: {duration}
-ꜰɪʟᴇɴᴀᴍᴇ: {filename}
+    CAPTION_TXT = """<blockquote>📝 𝖳𝗈 𝖲𝖾𝗍 𝖢𝗎𝗌𝗍𝗈𝗆 𝖢𝖺𝗉𝗍𝗂𝗈𝗇 𝖠𝗇𝖽 𝖬𝖾𝖽𝗂𝖺 𝖳𝗒𝗉𝖾</blockquote>
 
-➲ /setcaption: ᴛᴏ ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.
-➲ /seecaption: ᴛᴏ ᴠɪᴇᴡ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.
-➲ /delcaption: ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴄᴀᴘᴛɪᴏɴ.
+<b>𝖵𝖺𝗋𝗂𝖺𝖻𝗅𝖾𝗌 :</b>         
+𝖲𝗂𝗓𝖾: {filesize}  
+𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇: {duration}  
+𝖥𝗂𝗅𝖾𝗇𝖺𝗆𝖾: {filename}
 
-» ᴇx: /setcaption ꜰɪʟᴇ ɴᴀᴍᴇ: {filename}
-"""
+➲ /setcaption: 𝖳𝗈 𝖲𝖾𝗍 𝖠 𝖢𝗎𝗌𝗍𝗈𝗆 𝖢𝖺𝗉𝗍𝗂𝗈𝗇.  
+➲ /seecaption: 𝖳𝗈 𝖵𝗂𝖾𝗐 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖢𝖺𝗉𝗍𝗂𝗈𝗇.  
+➲ /delcaption: 𝖳𝗈 𝖣𝖾𝗅𝖾𝗍𝖾 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖢𝖺𝗉𝗍𝗂𝗈𝗇.
 
-    PREFIX = """<b>» <u>ᴛᴏ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴘʀᴇꜰɪx</u></b>
+» 𝖤𝗑: /setcaption 𝖥𝗂𝗅𝖾 𝖭𝖺𝗆𝖾: {filename}"""
 
-➲ /setprefix: ᴛᴏ ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ ᴘʀᴇꜰɪx.
-➲ /seeprefix: ᴛᴏ ᴠɪᴇᴡ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴘʀᴇꜰɪx.
-➲ /delprefix: ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ ᴘʀᴇꜰɪx.
+    PREFIX = """<blockquote>📜 𝖳𝗈 𝖲𝖾𝗍 𝖢𝗎𝗌𝗍𝗈𝗆 𝖯𝗋𝖾𝖿𝗂𝗑</blockquote>
 
-» ᴇx: `/setprefix @TechifyBots`
-"""
+➲ /setprefix: 𝖳𝗈 𝖲𝖾𝗍 𝖠 𝖢𝗎𝗌𝗍𝗈𝗆 𝖯𝗋𝖾𝖿𝗂𝗑.  
+➲ /seeprefix: 𝖳𝗈 𝖵𝗂𝖾𝗐 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖯𝗋𝖾𝖿𝗂𝗑.  
+➲ /delprefix: 𝖳𝗈 𝖣𝖾𝗅𝖾𝗍𝖾 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖯𝗋𝖾𝖿𝗂𝗑.
 
-    SUFFIX = """<b>» <u>ᴛᴏ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ sᴜꜰꜰɪx</u></b>
+» 𝖤𝗑: `/setprefix @TechifyBots`"""
 
-➲ /setsuffix: ᴛᴏ ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ sᴜꜰꜰɪx.
-➲ /seesuffix: ᴛᴏ ᴠɪᴇᴡ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ sᴜꜰꜰɪx.
-➲ /delsuffix: ᴛᴏ ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄᴜꜱᴛᴏᴍ sᴜꜰꜰɪx.
+    SUFFIX = """<blockquote>📜 𝖳𝗈 𝖲𝖾𝗍 𝖢𝗎𝗌𝗍𝗈𝗆 𝖲𝗎𝖿𝖿𝗂𝗑</blockquote>
 
-» ᴇx: `/setsuffix @TechifyBots`
-"""
+➲ /setsuffix: 𝖳𝗈 𝖲𝖾𝗍 𝖠 𝖢𝗎𝗌𝗍𝗈𝗆 𝖲𝗎𝖿𝖿𝗂𝗑.  
+➲ /seesuffix: 𝖳𝗈 𝖵𝗂𝖾𝗐 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖲𝗎𝖿𝖿𝗂𝗑.  
+➲ /delsuffix: 𝖳𝗈 𝖣𝖾𝗅𝖾𝗍𝖾 𝖸𝗈𝗎𝗋 𝖢𝗎𝗌𝗍𝗈𝗆 𝖲𝗎𝖿𝖿𝗂𝗑.
+
+» 𝖤𝗑: `/setsuffix @TechifyBots`"""
 
     PROGRESS_BAR = """\n
- <b>🔗 Size :</b> {1} | {2}
-️ <b>⏳️ Done :</b> {0}%
- <b>🚀 Speed :</b> {3}/s
-️ <b>⏰️ ETA :</b> {4}
+<b>😶‍🌫 𝖲𝗂𝗓𝖾 :</b> {1} | {2}
+<b>⏳️ 𝖣𝗈𝗇𝖾 :</b> {0}%
+<b>🚀 𝖲𝗉𝖾𝖾𝖽 :</b> {3}/s
+<b>⏰️ 𝖤𝖳𝖠 :</b> {4}
 """
 
-    DONATE_TXT = """
-<blockquote>❤️‍🔥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</blockquote>
+    DONATE_TXT = """<blockquote>❤️‍🔥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐟𝐨𝐫 𝐬𝐡𝐨𝐰𝐢𝐧𝐠 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</blockquote>
 
 <b><i>💞  ɪꜰ ʏᴏᴜ ʟɪᴋᴇ ᴏᴜʀ ʙᴏᴛ ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴅᴏɴᴀᴛᴇ ᴀɴʏ ᴀᴍᴏᴜɴᴛ ₹𝟷𝟶, ₹𝟸𝟶, ₹𝟻𝟶, ₹𝟷𝟶𝟶, ᴇᴛᴄ.</i></b>
 
@@ -100,11 +93,10 @@ class Txt(object):
 💗 𝐐𝐑 𝐂𝐨𝐝𝐞 : <b><a href='https://TechifyBots.github.io/PayWeb'>𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾</a></b>
 """
 
-    SEND_METADATA = """<b>» <u>ᴛᴏ ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ᴍᴇᴛᴀᴅᴀᴛᴀ</u></b>
+    SEND_METADATA = """<blockquote>📝 𝖳𝗈 𝖲𝖾𝗍 𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺</blockquote>
 
-➲ /metadata: ᴛᴏ ꜱᴇᴛ ᴀ ᴄᴜꜱᴛᴏᴍ ᴍᴇᴛᴀᴅᴀᴛᴀ
+➲ /metadata: 𝖳𝗈 𝖲𝖾𝗍 𝖠 𝖢𝗎𝗌𝗍𝗈𝗆 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺
 
-ᴀꜰᴛᴇʀ ᴜsɪɴɢ ᴄᴍᴅ sᴇɴᴅ ᴀɴʏ ᴛᴇxᴛ ɪ ᴡɪʟʟ sᴀᴠᴇ ɪᴛ ᴀs ʏᴏᴜʀ ᴍᴇᴛᴀᴅᴀᴛᴀ
+𝖠𝖿𝗍𝖾𝗋 𝖴𝗌𝗂𝗇𝗀 𝖢𝗆𝖽 𝖲𝖾𝗇𝖽 𝖠𝗇𝗒 𝖳𝖾𝗑𝗍 𝖨 𝖶𝗂𝗅𝗅 𝖲𝖺𝗏𝖾 𝖨𝗍 𝖠𝗌 𝖸𝗈𝗎𝗋 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺
 
-» ᴇx: `@TechifyBots`
-"""
+» 𝖤𝗑: `@TechifyBots`"""
