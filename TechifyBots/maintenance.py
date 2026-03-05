@@ -14,12 +14,12 @@ def normalize_ids(*items):
             ids.add(item)
     return ids
 
-BYPASS_IDS=normalize_ids(Config.ADMIN,Config.LOG_CHANNEL,Config.AUTH_CHANNELS,Config.AUTH_REQ_CHANNELS)
+BYPASS_IDS=normalize_ids(Config.ADMIN,Config.LOG_CHANNEL,Config.BIN_CHANNEL,Config.AUTH_CHANNELS,Config.AUTH_REQ_CHANNELS)
 
 class TechifyBots:
     def __init__(self):
-        mongo_client=AsyncIOMotorClient(Config.DB_URI)
-        db=mongo_client[Config.DB_NAME]
+        mongo_client=AsyncIOMotorClient(Config.DATABASE_URL)
+        db=mongo_client[Config.DATABASE_NAME]
         self.settings_col=db["settings"]
 
     async def get_maintenance(self)->bool:
