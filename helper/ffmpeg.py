@@ -6,7 +6,6 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from pyrogram.types import Message
 
-
 async def fix_thumb(thumb):
     width = 0
     height = 0
@@ -18,22 +17,14 @@ async def fix_thumb(thumb):
                 width = metadata.get("width")
             if metadata.has("height"):
                 height = metadata.get("height")
-
-            # Open the image file
             with Image.open(thumb) as img:
-                # Convert the image to RGB format and save it back to the same file
                 img.convert("RGB").save(thumb)
-
-                # Resize the image
                 resized_img = img.resize((width, height))
-
-                # Save the resized image in JPEG format
                 resized_img.save(thumb, "JPEG")
             parser.close()
     except Exception as e:
         print(e)
         thumb = None 
-
     return width, height, thumb
 
 async def take_screen_shot(video_file, output_directory, ttl):
@@ -60,7 +51,6 @@ async def take_screen_shot(video_file, output_directory, ttl):
         return out_put_file_name
     return None
 
-
 async def add_metadata(input_path, output_path, metadata, ms):
     try:
         await ms.edit("<i>I Found Metadata, Adding Into Your File ⚡</i>")
@@ -74,7 +64,6 @@ async def add_metadata(input_path, output_path, metadata, ms):
             '-metadata', f'artist={metadata}',  # Set Artist Metadata
             output_path
         ]
-
         process = await asyncio.create_subprocess_exec(
             *command,
             stdout=asyncio.subprocess.PIPE,
@@ -85,8 +74,6 @@ async def add_metadata(input_path, output_path, metadata, ms):
         t_response = stdout.decode().strip()
         print(e_response)
         print(t_response)
-
-
         if os.path.exists(output_path):
             await ms.edit("<i>Metadata Has Been Successfully Added To Your File ✅</i>")
             return output_path
