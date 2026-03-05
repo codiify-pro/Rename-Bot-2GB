@@ -10,16 +10,15 @@
 
 <details><summary>Tap On Me For Bot Features</summary>
 
-- Renames very fast .
-- Permanent Thumbnail support.
-- Force join for the user for use.
+- Renames very fast
+- Permanent Thumbnail support
 - Supports Broadcasts.
-- Set custom caption.
-- Has a custom Start-up pic.
+- Custom caption, Metadata, Prefix, Suffix,etc.support
+- Multi Fsub Available
 - Maintenance Mode
-- Force subscribe available.
 - Supports ulimited renaming at a time.
-- Auto delete 
+- Auto delete
+- Ban feature to protect bot from misuse.
 - Fully modified repo
 - Deploy To Koyeb + Heroku + Railway.
 - [Developer support](https://telegram.me/TechifySupport) 24x7
@@ -56,7 +55,6 @@ seecaption - see your custom caption.
 delcaption - delete custom caption.
 metadata - To change your metadata
 ping - To check bot ping.
-donate - To support developer.
 setprefix - Set Your Prefix
 seeprefix - See Your Prefix
 delprefix - Delete Your Prefix
