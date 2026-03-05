@@ -1,13 +1,23 @@
 import os
+import pyrogram.utils
+import pyromod
 from datetime import datetime
 from pytz import timezone
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
-from route import web_server
-import pyrogram.utils
-import pyromod
+
+routes = web.RouteTableDef()
+
+@routes.get("/", allow_head=True)
+async def root_route_handler(request):
+    return web.json_response("TechifyBots")
+
+async def web_server():
+    web_app = web.Application(client_max_size=30000000)
+    web_app.add_routes(routes)
+    return web_app
 
 pyrogram.utils.MIN_CHANNEL_ID = -100999999999999
 
