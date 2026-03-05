@@ -51,20 +51,21 @@
 start - Check if the bot is running.
 viewthumb - To view current thumbnail.
 delthumb - To delete current thumbnail.
-set_caption - set a custom caption.
-see_caption - see your custom caption.
-del_caption - delete custom caption.
+setcaption - set a custom caption.
+seecaption - see your custom caption.
+delcaption - delete custom caption.
 metadata - To change your metadata
 ping - To check bot ping.
 donate - To support developer.
-set_prefix - Set Your Prefix
-see_prefix - See Your Prefix
-del_prefix - Delete Your Prefix
-set_suffix - Set Your Suffix
-see_suffix - See Your Suffix
-del_suffix - Delete Your Suffix
+setprefix - Set Your Prefix
+seeprefix - See Your Prefix
+delprefix - Delete Your Prefix
+setsuffix - Set Your Suffix
+seesuffix - See Your Suffix
+delsuffix - Delete Your Suffix
 ban - To ban a user
 unban - To unban a banned user
+banned - To see ban users
 restart - To restart the bot
 broadcast - Message Broadcast command.
 maintenance - Toggle maintenance mode
