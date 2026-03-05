@@ -24,24 +24,6 @@
 - [Developer support](https://telegram.me/TechifySupport) 24x7
 </details>
 
-
-### 🔥 VARIABLES
-
-<details><summary>Tap On Me For Environment Variable</summary>
-
-* `API_ID` - Your Telegram [API ID](https://youtu.be/y5FwAobQ-Kc).
-* `API_HASH` - Your Telegram [API HASH](https://youtu.be/y5FwAobQ-Kc).
-* `BOT_TOKEN` - Get it from [BotFather](https://youtu.be/aJILCCXfNVM).
-* `ADMIN` - Your ID
-* `DATABASE_URL` - Enter Mongodb [database URL](https://youtu.be/j8LIuM7vv18)
-* `AUTH_CHANNELS` - Your Fsub channel IDs.
-* `LOG_CHANNEL` - Log Channel ID.
-* `DB_NAME`  - Your database name from mongoDB.
-* `START_PIC` - Start message photo.
-* `BIN_CHANNEL` - Bin channel ID.
-</details>
-
-
 ### 😍 COMMANDS
 
 <details><summary>Tap On Me For Commands</summary>
@@ -54,7 +36,6 @@ setcaption - set a custom caption.
 seecaption - see your custom caption.
 delcaption - delete custom caption.
 metadata - To change your metadata
-ping - To check bot ping.
 setprefix - Set Your Prefix
 seeprefix - See Your Prefix
 delprefix - Delete Your Prefix
@@ -67,9 +48,30 @@ banned - To see ban users
 restart - To restart the bot
 broadcast - Message Broadcast command.
 maintenance - Toggle maintenance mode
+ping - To check bot ping.
 status - Check bot status
 ```
 </details>
+
+
+### 🔥 VARIABLES
+
+<details><summary>Tap On Me For Environment Variable</summary>
+
+- `API_ID` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
+- `API_HASH` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
+- `BOT_TOKEN` : Get From [BotFather](https://youtu.be/rUEKDOSPFho)
+- `DATABASE_URL` : Mongodb [Database](https://youtu.be/j8LIuM7vv18)
+- `ADMIN` : Your Telegram ID.
+- `PICS` - Your bot start images (you can add multiple images)
+ - `IS_FSUB` : True/False FSUB accordingly.
+- `FSUB_EXPIRE` : Your FSUB link expire time.
+- `AUTH_CHANNELS` : Your Public & Private FSUB channels IDs.
+- `AUTH_REQ_CHANNELS` : Your Private Request FSUB channels IDs.
+- `LOG_CHANNEL` - Your log channel id.
+- `BIN_CHANNEL` - Your Bin channel ID.
+</details>
+
 
 ### 💞 CREDIT
 
@@ -80,6 +82,8 @@ status - Check bot status
 ### 😇 [SUPPORT](https://techifybots.github.io/PayWeb)
 
 ### 🥳 [DEVELOPER](https://instagram.com/ImRahulDhankhar)
+
+### 🚀 [DEPLOYMENT GUIDE](https://www.youtube.com/playlist?list=PLQrMSile4s5UnIEvWyKM1MKFuNg8Wfh2S)
 
 ### 📌 NOTE
 
