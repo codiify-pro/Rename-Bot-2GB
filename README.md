@@ -13,13 +13,12 @@
 - Renames very fast
 - Permanent Thumbnail support
 - Supports Broadcasts.
-- Custom caption, Metadata, Prefix, Suffix,etc.support
 - Multi Fsub Available
 - Maintenance Mode
 - Supports ulimited renaming at a time.
-- Auto delete
+- Auto delete available
 - Ban feature to protect bot from misuse.
-- Fully modified repo
+- Custom caption, Metadata, Prefix, Suffix,etc.
 - Deploy To Koyeb + Heroku + Railway.
 - [Developer support](https://telegram.me/TechifySupport) 24x7
 </details>
