@@ -4,7 +4,6 @@ from pytz import timezone
 from config import Config, Txt 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-
 async def progress_for_pyrogram(current, total, ud_type, message, start):
     now = time.time()
     diff = now - start
@@ -14,10 +13,8 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
         elapsed_time = round(diff) * 1000
         time_to_completion = round((total - current) / speed) * 1000
         estimated_total_time = elapsed_time + time_to_completion
-
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
-
         progress = "{0}{1}".format(
             ''.join(["▣" for i in range(math.floor(percentage / 5))]),
             ''.join(["▢" for i in range(20 - math.floor(percentage / 5))])
@@ -47,7 +44,6 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
-
 
 def TimeFormatter(milliseconds: int) -> str:
     seconds, milliseconds = divmod(int(milliseconds), 1000)
@@ -100,19 +96,10 @@ def add_prefix_suffix(input_string, prefix='', suffix=''):
             return f"{prefix}{filename}{extension}"
         else:
             return f"{prefix}{filename} {suffix}{extension}"
-
-
     else:
         return input_string
 
-
-
 def makedir(name: str):
-    """
-    Create a directory with the specified name.
-    If a directory with the same name already exists, it will be removed and a new one will be created.
-    """
-
     if os.path.exists(name):
         shutil.rmtree(name)
     os.mkdir(name)
