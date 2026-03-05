@@ -8,8 +8,8 @@ from config import Config
 
 class TechifyBots:
     def __init__(self):
-        client = AsyncIOMotorClient(Config.DB_URI)
-        db = client[Config.DB_NAME]
+        client = AsyncIOMotorClient(Config.DATABASE_URL)
+        db = client[Config.DATABASE_NAME]
         self.join_requests = db["join_requests"]
         self.fsub_cache = db["fsub_cache"]
 
