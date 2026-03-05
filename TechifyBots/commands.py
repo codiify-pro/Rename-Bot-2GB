@@ -1,0 +1,181 @@
+import random
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InputMediaPhoto
+from helper.database import tb
+from config import Config, Txt  
+
+@Client.on_message(filters.private & filters.command("start"))
+async def start(client, message):
+    user = message.from_user
+    await tb.add_user(client, message)
+    button = InlineKeyboardMarkup([
+        [InlineKeyboardButton('ℹ️ 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
+         InlineKeyboardButton('📚 𝖧𝖾𝗅𝗉', callback_data='help')],
+        [InlineKeyboardButton('👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋', user_id=int(Config.ADMIN))]
+    ])
+    await message.reply_photo(
+        photo=random.choice(Config.PICS),
+        caption=Txt.START_TXT.format(user.mention),
+        reply_markup=button
+    )
+
+@Client.on_callback_query()
+async def cb_handler(client, query: CallbackQuery):
+    data = query.data 
+
+    if data == "start":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.START_TXT.format(query.from_user.mention)
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton('ℹ️ 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
+                 InlineKeyboardButton('📚 𝖧𝖾𝗅𝗉', callback_data='help')],
+                [InlineKeyboardButton('👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋', user_id=int(Config.ADMIN))]
+            ])
+        )
+
+    elif data == "help":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.HELP_TXT
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🧬 𝖲𝖾𝗍 𝖬𝖾𝗍𝖺𝖽𝖺𝗍𝖺", callback_data="meta")],
+                [InlineKeyboardButton("🔤 𝖯𝗋𝖾𝖿𝗂𝗑", callback_data="prefix"),
+                 InlineKeyboardButton("🔤 𝖲𝗎𝖿𝖿𝗂𝗑", callback_data="suffix")],
+                [InlineKeyboardButton("📝 𝖢𝖺𝗉𝗍𝗂𝗈𝗇", callback_data="caption"),
+                 InlineKeyboardButton("🖼️ 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅", callback_data="thumbnail")],
+                [InlineKeyboardButton("🏠 𝖧𝗈𝗆𝖾", callback_data="start")]
+            ])
+        )
+
+    elif data == "meta":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.SEND_METADATA
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔙 𝖡𝖺𝖼𝗄", callback_data="help"),
+                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+            ])
+        )
+
+    elif data == "prefix":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.PREFIX
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔙 𝖡𝖺𝖼𝗄", callback_data="help"),
+                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+            ])
+        )
+
+    elif data == "suffix":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.SUFFIX
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔙 𝖡𝖺𝖼𝗄", callback_data="help"),
+                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+            ])
+        )
+
+    elif data == "caption":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.CAPTION_TXT
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔙 𝖡𝖺𝖼𝗄", callback_data="help"),
+                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+            ])
+        )
+
+    elif data == "thumbnail":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.THUMBNAIL_TXT
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔙 𝖡𝖺𝖼𝗄", callback_data="help"),
+                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+            ])
+        )
+
+    elif data == "about":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.ABOUT_TXT
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("💻 𝖱𝖾𝗉𝗈", url="https://github.com/TechifyBots/Rename-Bot-2GB"),
+                 InlineKeyboardButton("💖 𝖣𝗈𝗇𝖺𝗍𝖾", callback_data="donate")],
+                [InlineKeyboardButton("🏠 𝖧𝗈𝗆𝖾", callback_data="start")]
+            ])
+        )
+
+    elif data == "donate":
+        await query.message.edit_media(
+            media=InputMediaPhoto(
+                random.choice(Config.PICS),
+                caption=Txt.DONATE_TXT
+            ),
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🤖 𝖬𝗈𝗋𝖾 𝖡𝗈𝗍𝗌", url="https://telegram.me/TechifyBots/8")],
+                [InlineKeyboardButton("🔙 𝖡𝖺𝖼𝗄", callback_data="about"),
+                 InlineKeyboardButton("❌ 𝖢𝗅𝗈𝗌𝖾", callback_data="close")]
+            ])
+        )
+
+    elif data == "close":
+        try:
+            await query.message.delete()
+            await query.message.reply_to_message.delete()
+        except:
+            await query.message.delete()
+
+    elif data.startswith("sendAlert"):
+        user_id =(data.split("_")[1])
+        user_id = int(user_id.replace(' ' , ''))
+        if len(str(user_id)) == 10:
+            reason = str(data.split("_")[2])
+            try:
+                await client.send_message(user_id , f"<b>ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ʙʏ [ʀᴀʜᴜʟ](https://telegram.me/callownerbot)\nʀᴇᴀsᴏɴ : {reason}</b>")
+                await query.message.edit(f"<b>Aʟᴇʀᴛ sᴇɴᴛ ᴛᴏ <code>{user_id}</code>\nʀᴇᴀsᴏɴ : {reason}</b>")
+            except Exception as e:
+                await query.message.edit(f"<b>sʀʏ ɪ ɢᴏᴛ ᴛʜɪs ᴇʀʀᴏʀ : {e}</b>")
+        else:
+            await query.message.edit(f"<b>Tʜᴇ ᴘʀᴏᴄᴇss ᴡᴀs ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴜsᴇʀ ɪᴅ ᴡᴀs ɴᴏᴛ ᴠᴀʟɪᴅ, ᴏʀ ᴘᴇʀʜᴀᴘs ɪᴛ ᴡᴀs ᴀ ᴄʜᴀɴɴᴇʟ ɪᴅ</b>")
+
+    elif data.startswith('noAlert'):
+        user_id =(data.split("_")[1])
+        user_id = int(user_id.replace(' ' , ''))
+        await query.message.edit(f"<b>Tʜᴇ ʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.</b>")
+
+    elif data.startswith('sendUnbanAlert'):
+        user_id =(data.split("_")[1])
+        user_id = int(user_id.replace(' ' , ''))
+        if len(str(user_id)) == 10:
+            try:
+                unban_text = "<b>ʜᴜʀʀᴀʏ..ʏᴏᴜ ᴀʀᴇ ᴜɴʙᴀɴɴᴇᴅ ʙʏ [ʀᴀʜᴜʟ](https://telegram.me/callownerbot)</b>"
+                await client.send_message(user_id , unban_text)
+                await query.message.edit(f"<b>Uɴʙᴀɴɴᴇᴅ Aʟᴇʀᴛ sᴇɴᴛ ᴛᴏ <code>{user_id}</code>\nᴀʟᴇʀᴛ ᴛᴇxᴛ : {unban_text}</b>")
+            except Exception as e:
+                await query.message.edit(f"<b>sʀʏ ɪ ɢᴏᴛ ᴛʜɪs ᴇʀʀᴏʀ : {e}</b>")
+        else:
+            await query.message.edit(f"<b>Tʜᴇ ᴘʀᴏᴄᴇss ᴡᴀs ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴜsᴇʀ ɪᴅ ᴡᴀs ɴᴏᴛ ᴠᴀʟɪᴅ, ᴏʀ ᴘᴇʀʜᴀᴘs ɪᴛ ᴡᴀs ᴀ ᴄʜᴀɴɴᴇʟ ɪᴅ</b>")   
+    elif data.startswith('NoUnbanAlert'):
+        user_id =(data.split("_")[1])
+        user_id = int(user_id.replace(' ' , ''))
+        await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
