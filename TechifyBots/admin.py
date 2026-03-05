@@ -2,7 +2,7 @@ import os, sys, time, asyncio, logging, datetime
 from config import Config
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, Message
-from helper.database import tb
+from .database import tb
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
 logger=logging.getLogger(__name__)
