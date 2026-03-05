@@ -2,13 +2,13 @@ import motor.motor_asyncio
 from config import Config
 from .utils import send_log
 
-class Database:
+class TechifyBots:
 
     def __init__(self, uri, database_name):
         self._client = motor.motor_asyncio.AsyncIOMotorClient(uri)
-        self.jishubotz = self._client[database_name]
-        self.col = self.jishubotz.user
-        self.bannedList = self.jishubotz.bannedList
+        self.tb = self._client[database_name]
+        self.col = self.tb.user
+        self.bannedList = self.tb.bannedList
 
     def new_user(self, id):
         return dict(
@@ -123,4 +123,5 @@ class Database:
             print(e)
             return e
 
-jishubotz = Database(Config.DATABASE_URL, Config.DATABASE_NAME)
+
+tb = TechifyBots(Config.DATABASE_URL, Config.DATABASE_NAME)
