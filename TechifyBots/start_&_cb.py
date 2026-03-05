@@ -3,34 +3,22 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery
 from helper.database import jishubotz
 from config import Config, Txt  
-from .fsub import *
 
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
     user = message.from_user
     await jishubotz.add_user(client, message)
-    if Config.IS_FSUB and not await get_fsub(client, message):
-        return
-
     button = InlineKeyboardMarkup([
         [InlineKeyboardButton('ℹ️ 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
          InlineKeyboardButton('📚 𝖧𝖾𝗅𝗉', callback_data='help')],
         [InlineKeyboardButton('👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 👨‍💻', user_id=int(Config.ADMIN))]
     ])
 
-    if Config.START_PIC:
-        pic = random.choice(Config.START_PIC)
-        await message.reply_photo(
-            photo=pic,
-            caption=Txt.START_TXT.format(user.mention),
-            reply_markup=button
-        )
-    else:
-        await message.reply_text(
-            text=Txt.START_TXT.format(user.mention),
-            reply_markup=button,
-            disable_web_page_preview=True
-        )
+    await message.reply_photo(
+        photo=random.choice(Config.PICS),
+        caption=Txt.START_TXT.format(user.mention),
+        reply_markup=button
+    )
 
 @Client.on_callback_query()
 async def cb_handler(client, query: CallbackQuery):
