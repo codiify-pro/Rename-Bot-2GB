@@ -3,7 +3,7 @@ from typing import List
 id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
-    API_ID = os.environ.get("API_ID", "")
+    API_ID = os.environ.get("API_ID", "38250529")
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     DATABASE_NAME = os.environ.get("DATABASE_NAME","techifybots")     
